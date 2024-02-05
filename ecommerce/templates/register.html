@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<center>
+  <h1 class="mt-4" style=" color:blue;"> Welcome to Register</h1></center>
+
+
+<center>
+    <div style="width:600px;height:600px;background-color:lightblue;">
+        <br>
+        <br>
+    <form method="POST">
+        {% csrf_token %}
+    <label>Username</label>
+    <input type="text" name="u"><br><br>
+
+    <label>Password</label>
+    <input type="password" name="p"><br><br>
+
+      <label>Confirm Password</label>
+    <input type="password" name="cp"><br><br>
+
+      <label>First Name</label>
+    <input type="text" name="f"><br><br>
+
+      <label>Last Name</label>
+    <input type="text" name="l"><br><br>
+
+        <label>E-mail Address</label>
+    <input type="email" name="e"><br><br>
+
+
+
+
+
+
+    <input type="Submit">&nbsp;&nbsp;
+
+</form>
+    </div>
+</center>
+
+{% endblock %}
+

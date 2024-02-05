@@ -1,0 +1,33 @@
+                                        body
+{
+    background-color:#DD0707;
+    font-family: 'Lato', sans-serif;
+}
+.footer
+{
+    height:40px;
+    width:100%;
+    background-color:white;
+    position:fixed;
+    bottom:0;
+    left:0;
+    text-align:center;
+}
+.card{
+display:inline-block;
+margin-top: 50px;
+margin-left: 150px;
+width:300px;
+box-shadow: 0 0px 8px #211f1f;
+
+}
+
+.card-text{
+height:150px;
+}
+.table-bordered
+{
+    border-color:red;
+
+}
+

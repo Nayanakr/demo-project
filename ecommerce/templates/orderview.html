@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<h4>Name of the Customer:{{u}}</h4>
+{% for i in o %}
+<h4>Product_name:{{i.product.name}}</h4>
+<h4>Product_price:{{i.product.price}}</h4>
+<h4>Delivery_address:{{i.address}}</h4>
+<h4>Phone Number:{{i.phone}}</h4>
+<h4>No_of_Items:{{i.no_of_items}}</h4>
+<h4>Ordered on:{{i.ordered_date}}</h4>
+<h4>Delivery_status:{{i.order_status}}</h4>
+{% endfor %}
+
+
+{% endblock %}
